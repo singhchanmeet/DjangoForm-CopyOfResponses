@@ -1,0 +1,152 @@
+:root {
+    --darkblue: #084478;
+    --lightblue: #01447c;
+    --red: #dc2028;
+    --bgwhite: #efefef;
+    --white: #fff;
+    --text: #8897b6;
+}
+
+body {
+    margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	background-color: var(--bgwhite);
+	padding: 0 2rem;
+}
+
+input {
+	appearance: none;
+	border-radius: 0;
+}
+
+h1::selection{
+	background-color: var(--text);
+}
+
+.card {
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 425px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(#999, .25);
+	padding: .75rem;
+}
+
+.card-form {
+	padding: 2rem 1rem 0;
+}
+h1{
+	text-align;
+}
+
+.input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	&+.input {
+		margin-top: 1.5rem;
+	}
+}
+
+.input-label {
+	color: var(--darkblue);
+	top: 1.5rem;
+	transition: .25s ease;
+}
+
+
+.centered{
+	text-align: center;
+}
+
+.input-label-main {
+	font-family: 'Montserrat', sans-serif;
+	color: var(--red);
+	transition: .25s ease;
+	margin-bottom: -1rem;
+}
+
+
+.input-field {
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid var(--text); 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+	&:focus, &:valid {
+		outline: 0;
+		border-bottom-color: var(--red);
+		&+.input-label {
+			color: var(--lightblue);
+			transform: translateY(-1.5rem);
+		}
+	}
+}
+
+.action {
+	margin-top: 2rem;
+}
+
+.action-button {
+	font-family: 'Montserrat', sans-serif;
+	font: inherit;
+	font-size: 1.25rem;
+	padding: 0.5em;
+	width: 100%;
+	font-weight: 500;
+	background-color: var(--red);
+	border: 0px;
+	border-radius: 6px;
+	color: var(--bgwhite);
+	&:focus {
+		outline: 0;
+	}
+}
+
+.action-button:hover {
+	opacity: 90%;
+	transition: .2s ease;
+}
+
+.card-info {
+	margin:0px;
+	margin-top: 0.5rem;
+	padding: 0px;
+	text-align: center;
+	font-size: 0.8rem;
+	color: #8597a3;
+}
+.card-infomain {
+	padding: 1rem 1rem;
+	text-align: center;
+	font-size: 0.9rem;
+	color: #4b4a4a;
+}
+
+
+  #mainheading {
+	font-size: 4rem;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 0;
+	font-family: 'Oswald', sans-serif;
+	color: var(--red);
+	background-color: var(--white);
+	width: 100vw;
+	margin-left: -3rem;
+	letter-spacing: 4px;
+	transition: 0.5s ease;
+	/* font-variation-settings: "wght" 311; */
+	position: sticky;
+	top: 0px;
+	z-index: 14;
+
+  }
+
